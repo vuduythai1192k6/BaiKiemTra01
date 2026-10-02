@@ -1,1 +1,36 @@
-# Vũ Duy Thái 24810310408
+# BaiKiemTra01
+I . Phần lý thuyết
+Câu 1
+1. Value Type (Kiểu giá trị)
+- Lưu trực tiếp dữ liệu giá trị trên Stack
+- Tạo ra một bản sao dữ liệu mới hoàn toàn độc lập.
+- không thể nhận null
+2. Reference Types (Kiểu tham chiếu)
+- Lưu địa chỉ con trỏ trên Stack, còn dữ liệu đối tượng thực tế nằm trên Heap.
+- Chỉ sao chép địa chỉ tham chiếu, cả hai biến cùng trỏ vào 1 đối tượng trên Heap.
+- Có thể chứa giá trị null
+Câu 2
+1. set thông thường : Cho phép thay đổi giá trị của thuộc tính bất kỳ lúc nào trong suốt vòng đời của đối tượng
+2 .init : Chỉ cho phép gán giá trị trong quá trình khởi tạo đối tượng . Khi đối tượng đã khởi tạo xong,
+thuộc tính đó trở thành Read-only và không thể sửa đổi.
+3. Trường hợp sử dụng thực tế
+- Thiết kế Response Models
+- Tránh Constructor quá dài
+- Xây dựng Value Objects trong Domain Driven Design
+- Kết hợp với kiểu dữ liệu record trong C# 9+
+Câu 3
+1 . Phương thức virtual 
+- Nằm trong lớp cha
+- Khai báo một phương thức có thể bị thay thế bởi lớp con.
+- Bắt buộc phải có body hàm mặc định.
+- Định nghĩa tên, kiểu trả về và tham số đầu vào.
+2 . Phương thức override 
+- Nằm trong lớp con
+- Khai báo một triển khai mới thay thế cho phương thức lớp cha.
+- Cung cấp thân hàm mới cho lớp con
+- Bắt buộc phải khớp hoàn toàn với tên, kiểu trả về và tham số của phương thức virtual.
+Câu 4
+- Thành phần được khai báo là stati không thể truy xuất thông qua một thể hiện vì 
+nó thuộc về cấu trúc của chính Lớp (Class) đó, chứ không thuộc về bất kỳ đối tượng cụ thể nào được sinh ra từ lớp.
+- chỉ tồn tại một bản sao duy nhất trong bộ nhớ, thành phần static được chia sẻ chung cho tất cả các đối tượng. 
+Việc thay đổi giá trị của một biến tĩnh sẽ tác động đến toàn bộ hệ thống.
